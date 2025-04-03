@@ -30,11 +30,12 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            position: relative;
         }
 
         .main-container {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 30px; /* Reduced to give more room for the logo */
             width: 100%;
         }
 
@@ -43,9 +44,9 @@
             height: 100px;
             border-radius: 50%;
             overflow: hidden;
+            margin-bottom: 20px; /* Space between logo and title */
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 20px; /* Fix logo position */
         }
 
         .logo-container img {
@@ -130,7 +131,7 @@
 
     <div class="a4-container">
         <div class="container main-container">
-            <!-- Logo Section -->
+            <!-- Logo Section (Above Title) -->
             <div class="logo-container">
                 <img src="images/autoc.png" alt="Auto Cela Logo">
             </div>

@@ -125,6 +125,26 @@
                 font-size: 14px;
             }
         }
+        /* Style adjustments for buttons */
+        .btn-container {
+            display: flex;
+            flex-direction: row; /* Align buttons horizontally */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            justify-content: center; /* Center the buttons */
+            gap: 10px; /* Add spacing between buttons */
+            margin-top: 20px;
+        }
+
+        /* Button styles for smaller screens */
+        @media (max-width: 767px) {
+            .btn-container {
+                flex-direction: column; /* Stack buttons vertically on mobile */
+                align-items: center; /* Center the buttons */
+                gap: 15px; /* More space between buttons */
+            }
+        }
+        
+
     </style>
 </head>
 <body>
@@ -149,12 +169,21 @@
                 target="_blank">
                Buy Website
              </a>
+             <a href="https://median.co/share/ooonrd#apk" class="btn btn-warning" download>Download App Demo</a>
+             
+<!-- Disclaimer -->
+            <div class="disclaimer" style="margin-top: 20px; text-align: center; font-size: 14px; color: #777;">
+                <p><strong>Disclaimer:</strong> The AutoCela app is currently available only on Android devices. The iOS version is not yet available.</p>
             </div>
+                        </div>
 
             <!-- Description Section -->
             <div class="description-text">
                 <h3>About AutoCela</h3>
-                <p>AutoCela is an online platform designed to streamline the process of renting cars. The site offers a clean and user-friendly interface where customers can easily browse through a variety of cars available for rent. Key features of the website include:</p>
+                <p>AutoCela is a modern platform available both as a responsive website and a mobile app,
+                 designed to streamline the process of renting cars. Whether on desktop or mobile, users can enjoy 
+                 a clean and user-friendly interface to browse through a variety of cars available for rent.
+                 Key features of the platform include:</p>
                 <ul>
                     <li><strong>Car Listings:</strong> A page displaying various cars with detailed descriptions, images, and the option to filter the available cars based on different preferences.</li>
                     <li><strong>Car Reservation:</strong> Users can book a car directly through the site, with clear options for rental dates, availability, and pricing.

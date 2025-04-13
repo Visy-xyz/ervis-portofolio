@@ -125,6 +125,24 @@
                 font-size: 14px;
             }
         }
+         /* Style adjustments for buttons */
+         .btn-container {
+            display: flex;
+            flex-direction: row; /* Align buttons horizontally */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            justify-content: center; /* Center the buttons */
+            gap: 10px; /* Add spacing between buttons */
+            margin-top: 20px;
+        }
+
+        /* Button styles for smaller screens */
+        @media (max-width: 767px) {
+            .btn-container {
+                flex-direction: column; /* Stack buttons vertically on mobile */
+                align-items: center; /* Center the buttons */
+                gap: 15px; /* More space between buttons */
+            }
+        }
     </style>
 </head>
 <body>
@@ -149,7 +167,13 @@
                 target="_blank">
                Buy Website
              </a>
+             <a href="https://median.co/share/neeanr#apk" class="btn btn-warning" download>Download App Demo</a>
              
+             <!-- Disclaimer -->
+                         <div class="disclaimer" style="margin-top: 20px; text-align: center; font-size: 14px; color: #777;">
+                             <p><strong>Disclaimer:</strong> The VisiDent app is currently available only on Android devices. The iOS version is not yet available.</p>
+                         </div>
+                                     </div>
             </div>
 
             <!-- Description Section -->

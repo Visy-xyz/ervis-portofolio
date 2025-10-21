@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoCela - Car Rental App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0056b3;
+      --secondary: #f4f4f4;
+      --border: #ddd;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--secondary);
+      margin: 0;
+      padding: 40px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .a4-container {
+      width: 100%;
+      max-width: 900px;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      border: 1px solid var(--border);
+    }
+
+    .logo-container {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .btn-custom {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .disclaimer {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .description-text {
+      font-size: 16px;
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    .description-text h3,
+    .description-text h4 {
+      font-weight: 600;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+      margin-top: 30px;
+      color: var(--primary);
+    }
+
+    .description-text ul {
+      padding-left: 20px;
+    }
+
+    .feature-highlight {
+      background-color: #e8f4fd;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+      border-left: 4px solid var(--primary);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
+
+    @media (max-width: 768px) {
+      .project-title {
+        font-size: 1.8rem;
+      }
+
+      .btn-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-custom {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .description-text {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="a4-container">
+    <div class="logo-container">
+      <img src="images/autoc.png" alt="AutoCela Logo">
+    </div>
+    <div class="project-title">AutoCela</div>
+
+    <!-- Buttons Section -->
+    <div class="btn-container">
+      <a href="https://buymeacoffee.com/visyy/e/470441" class="btn btn-warning btn-custom" target="_blank">
+        <i class="fas fa-mug-hot"></i> Buy App CodeBase
+      </a>
+    <a href="https://play.google.com/store/apps/details?id=com.autocela.app" class="play-badge" target="_blank" rel="noopener">
+  <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+       alt="Get it on Google Play" style="height:68px;">
+</a>
+
+    </div>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> The AutoCela app is currently available on Play Store. The iOS version is also available if you want to buy it.
+    </div>
+
+    <!-- Description -->
+    <div class="description-text">
+      <h3>About AutoCela</h3>
+      <p>AutoCela is a comprehensive car rental platform built with Flutter, offering both a responsive website and a mobile app. The platform provides a seamless experience for users to browse, book, and manage car rentals with advanced features and modern technology integration.</p>
+
+      <div class="feature-highlight">
+        <strong>🎯 Mission:</strong> "Where sophistication meets performance—drive with distinction." AutoCela aims to provide high-quality vehicle rental services that cater to every customer's needs with professionalism, efficiency, and affordability.
+      </div>
+
+      <h4>Core Features</h4>
+      <ul>
+        <li><strong>Car Catalog:</strong> Browse through a comprehensive collection of vehicles with detailed specifications including horsepower, transmission type, fuel type, seating capacity, and ratings.</li>
+        <li><strong>Advanced Search & Filtering:</strong> Search cars by name, type, plate number, price, or year with real-time filtering capabilities.</li>
+        <li><strong>Car Booking System:</strong> Complete booking process with date/time selection, pickup location, insurance options, and payment methods.</li>
+        <li><strong>Google Sign-In Integration:</strong> Secure authentication using Google OAuth for seamless user experience.</li>
+        <li><strong>Favorites System:</strong> Save and manage favorite cars for quick access and easy booking.</li>
+        <li><strong>Payment Processing:</strong> Multiple payment options including cash and credit/debit cards with secure card scanning capabilities.</li>
+        <li><strong>AI-Powered Chatbot:</strong> Integrated Dialogflow chatbot for instant customer support and inquiries.</li>
+        <li><strong>Push Notifications:</strong> Real-time notifications for booking updates and important announcements.</li>
+        <li><strong>Dark/Light Theme:</strong> Customizable UI themes for enhanced user experience.</li>
+        <li><strong>Multi-language Support:</strong> Available in English and Albanian languages.</li>
+        <li><strong>Admin Dashboard:</strong> Comprehensive admin panel for managing cars, bookings, and customer feedback.</li>
+      </ul>
+
+      <h4>Booking Process</h4>
+      <ul>
+        <li><strong>Date & Time Selection:</strong> Choose pickup and return dates with specific time slots.</li>
+        <li><strong>Location Services:</strong> Select pickup location (currently supports Tirana).</li>
+        <li><strong>Insurance Options:</strong> Choose between TPL (Third Party Liability) or Full CASCO insurance.</li>
+        <li><strong>Payment Methods:</strong> Pay with cash (preferred) or credit/debit cards with secure processing.</li>
+        <li><strong>Booking Confirmation:</strong> Real-time booking status updates with admin approval system.</li>
+      </ul>
+
+      <h4>Admin Features</h4>
+      <ul>
+        <li><strong>Car Management:</strong> Add, edit, and delete vehicles with image upload to Firebase Storage.</li>
+        <li><strong>Booking Management:</strong> View, approve, reject, or cancel bookings with automated notifications.</li>
+        <li><strong>Customer Feedback:</strong> Manage and respond to customer feedback and inquiries.</li>
+        <li><strong>Analytics Dashboard:</strong> Track bookings, revenue, and customer interactions.</li>
+      </ul>
+
+      <h4>Technologies Used</h4>
+      <ul>
+        <li><strong>Flutter:</strong> Cross-platform mobile app development framework.</li>
+        <li><strong>Firebase:</strong> Backend-as-a-Service including Authentication, Firestore, Storage, and Messaging.</li>
+        <li><strong>Google Services:</strong> Google Sign-In, Google Maps integration, and Google Fonts.</li>
+        <li><strong>Dialogflow:</strong> AI-powered chatbot for customer support.</li>
+        <li><strong>Payment Integration:</strong> Credit card processing with flutter_credit_card package.</li>
+        <li><strong>Card Scanning:</strong> Camera-based credit card scanning functionality.</li>
+        <li><strong>Localization:</strong> Multi-language support with Flutter's internationalization.</li>
+        <li><strong>Audio Integration:</strong> Background music and sound effects.</li>
+        <li><strong>Image Processing:</strong> Image picker and Firebase Storage integration.</li>
+        <li><strong>Push Notifications:</strong> Firebase Cloud Messaging for real-time updates.</li>
+      </ul>
+
+      <h4>User Experience Features</h4>
+      <ul>
+        <li><strong>Animated Splash Screen:</strong> Engaging intro with audio and smooth transitions.</li>
+        <li><strong>Responsive Design:</strong> Optimized for various screen sizes and orientations.</li>
+        <li><strong>Intuitive Navigation:</strong> Bottom navigation bar with Home, Cars, Favorites, and Profile sections.</li>
+        <li><strong>Real-time Updates:</strong> Live data synchronization with Firebase Firestore.</li>
+        <li><strong>Offline Capabilities:</strong> Local storage for favorites and user preferences.</li>
+        <li><strong>Security:</strong> Secure authentication and data encryption.</li>
+      </ul>
+
+      <h4>Business Model</h4>
+      <ul>
+        <li><strong>Rental Pricing:</strong> Daily rental rates with transparent pricing structure.</li>
+        <li><strong>Insurance Options:</strong> Additional insurance coverage for enhanced protection.</li>
+        <li><strong>Flexible Payment:</strong> Cash-on-delivery and card payment options.</li>
+        <li><strong>Customer Support:</strong> 24/7 chatbot assistance and direct contact via WhatsApp.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>For more information, customization, or business inquiries, <strong>CONTACT ME</strong></p>
+      <a href="https://wa.me/+355698118754?text=Hi%2C%20I%20want%20to%20buy%20your%20website" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contact Me
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
